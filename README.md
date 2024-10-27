@@ -81,7 +81,7 @@ Para executar este projeto, você precisará ter os seguintes softwares instalad
 ### 1. Clonar o repositório
 
 ```shell
-git clone https://github.com/kimidomaru/docker_practice.git
+git clone https://github.com/zeronikon/conteinert1/docker_practice.git
 ```
 
 ### 2. Navegar até o diretório do projeto
