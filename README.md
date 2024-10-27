@@ -28,13 +28,14 @@ O ambiente é configurado utilizando Docker e Docker Compose, com os seguintes s
 - **Backend**: A API em Node.js que processa a lógica do jogo e gerencia a comunicação com o banco de dados.
 - **PostgreSQL**: O banco de dados que armazena informações do jogo, como usuários e palavras.
 
-### Arquitetura dos Componentes
+### Arquitetura dos componentes
 
 ```mermaid
 graph LR;
     Nginx --> Frontend;
     Frontend --> Backend;
     Backend --> PostgreSQL;
+```
 
 ## Boas Práticas Adotadas
 - Uso de Docker e Docker Compose: Todos os serviços são containerizados, garantindo consistência e isolamento entre os ambientes.
@@ -80,7 +81,7 @@ Para executar este projeto, você precisará ter os seguintes softwares instalad
 ### 1. Clonar o repositório
 
 ```shell
-git clone https://github.com/zeronikon/conteinert1/docker_practice.git
+git clone https://github.com/kimidomaru/docker_practice.git
 ```
 
 ### 2. Navegar até o diretório do projeto
@@ -105,6 +106,11 @@ Para limpar o projeto e remover os containers, volumes e redes criados pelo Dock
 1. Parar e remover os containers
 ```bash
 docker-compose down
+```
+
+2. Remover volumes associados
+```
+docker-compose down -v
 ```
 
 2. Remover volumes associados
